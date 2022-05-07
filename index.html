@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts.js" defer></script>
+    <link rel="stylesheet" href="./estilos2.css">
+</head>
+<body>
+    <main class="inicio-container">
+    <header><h1>Proyecto Plazo Fijo</h1></header>
+    <form id="formulario" class="inicio-form">
+        <label>
+            Nombre: <input id="inputNombre" type="text" required>
+        </label>
+        <br>
+        <label>
+            Apellido: <input id="inputApellido" type="text" required>
+        </label>
+        <br>
+        <label>
+            Monto: <input type="number" name="" id="monto" min="1000" required>
+        </label>
+        <br>
+        <label>
+            Cantidad de dias: <input type="number" name="" id="dias" min="30" required>
+        </label>
+        <br>
+        <div id="mostrarError" class="mensajeError"></div>
+        <div id="input-radio">
+            <p>Desea reinvertir el capital?</p>
+                <label > <input id="inputYes" type="radio" name="option" class="input-radio" value="true"> Si</label>
+                <label > <input id="inputNo" type="radio" name="option" class="input-radio" value="false" checked> No</label>
+        </div>
+        <button id="btnCalcular" type="submit" >Calcular</button>
+        <div id="mostrarMonto">
+            
+        </div>
+        <div id="tabla" style="visibility: hidden;">
+            <table>
+                <tr>
+                    <td>Período</td>
+                    <td>Monto inicial</td>
+                    <td>Monto Final</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td id="mi1"></td>
+                    <td id="mf1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td id="mi2"></td>
+                    <td id="mf2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td id="mi3"></td>
+                    <td id="mf3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td id="mi4"></td>
+                    <td id="mf4"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+</main>
+<footer>
+    <h4>Este Proyecto fue creado por: <br>Franco Lescano <br>Lucas Astudillo <br>
+    </h4>
+    <h5>Todos los derechos reservados copyright 2022 ©</h5>
+</footer>
+</body>
+</html>
